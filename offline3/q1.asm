@@ -240,7 +240,8 @@ TAKE_INPUT PROC
          JG MAKE_NEG
          JLE FINISHED
          MAKE_NEG:
-                NEG SUM                                             
+                NEG SUM
+                MOV DX , 0FFFFH                                             
          FINISHED:
          
          RET        
